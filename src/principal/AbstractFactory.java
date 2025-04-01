@@ -6,8 +6,14 @@ package principal;
 
 /**
  *
- * @author profslpa
+ * @author carlos bonfim
  */
 public abstract class AbstractFactory {
+    public abstract Shape getCircle(float radius);
     
+    public abstract Shape getRectangle(float base, float height);
+    
+    public abstract Shape getSquare(float side);
+
+    public abstract Shape getTrapeze(float obliqueSides, float largeBase, float smallBase);
 }

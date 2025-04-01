@@ -14,7 +14,13 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        AbstractFactory blueFactory = FactoryProdutor.getFactory("AZUL");
+        AbstractFactory greenFactory = FactoryProdutor.getFactory("Verde");
+       
+         blueFactory.getTrapeze(9, 6, 12).draw();
+
+         greenFactory.getSquare(5).draw();
+
     }
     
 }
